@@ -1,16 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body {
     display: grid;
     grid-template: 1fr 10fr / 1fr 3fr;
     height: 100vw;
+    font-family: "open sans", sans-serif;
 }
+
+li {
+    font-size: 24px;
+}
+
+
 
 .area {
     padding: 16px;
 }
 .nav {
     grid-area: 1/1/3/2;
-    background-color: skyblue;
+    background-color: #1992D4;
+    color: white;
 
+}
+
+.nav-list {
+    margin-bottom: 48px;
 }
 
 .header {
@@ -20,10 +34,9 @@ body {
     
 }
 
-.content {
-    grid-area: 2/2/3/3;
-    background-color: lightgray;
-
+.user {
+    grid-column: 7/9;
+    display: flex;
 }
 
 .search {
@@ -38,9 +51,53 @@ body {
     height: 24px;
     border-style: none;
     padding-left: 10px;
-    background-color: lightgray;
+    background-color: #E2E8F0;
     width: 80%;
     margin-left: 8px;
+}
+
+.content {
+    grid-area: 2/2/3/3;
+    background-color: lightgray;
+
+}
+
+.content-area {
+    display: flex;
+    width: 100%;
+    background-color: #E2E8F0;
+}
+
+.prjct-area {
+    flex:auto
+}
+
+.projects-ctn {
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.project-card {
+    min-width: 150px;
+    max-width: 400px;
+    height: 180px;
+    margin: 8px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.anouncements {
+    min-width: 250px;
+    margin: 8px;
+}
+
+.anouncement-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 8px;
 }
 
 .icon {
@@ -50,6 +107,32 @@ body {
     margin-bottom: auto;
 }
 
-.user {
-    grid-column: 7/9;
+
+.dash-logo-container {
+    display: flex;
+    margin-bottom: 128px;
 }
+
+.logo {
+    height: 48px;
+    margin: 10px;
+    
+}
+
+.at-user-container {
+    display: flex;
+    grid-column: 1/6;
+    padding-top: 8px;
+}
+
+
+
+.marg-none {
+    margin: 0px;
+}
+
+.pd-10 {
+    padding: 10px;
+}
+
+
